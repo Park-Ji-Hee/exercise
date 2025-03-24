@@ -1,19 +1,15 @@
 import java.util.Scanner;
- 
 public class Main {
-	public static void main(String args[]) {
- 
-		Scanner in = new Scanner(System.in);
- 
-		int T = in.nextInt();
- 
-		for (int i = 1; i <= T; i++) {
-			int A = in.nextInt();
-			int B = in.nextInt();
- 
-			System.out.println("Case #" + i + ": " + A + " + " + B + " = " + (A+B));
+	public static void main (String[] args){
+		Scanner sc = new Scanner(System.in);
+		
+		int t = sc.nextInt();
+		
+		for(int n = 1 ; n <= t ; n++) {
+			int a = sc.nextInt();
+			int b = sc.nextInt();
+			System.out.printf("Case #%d: %d + %d = %d\n", n, a, b, a+b);
 		}
- 
-		in.close();
+		sc.close();
 	}
 }
